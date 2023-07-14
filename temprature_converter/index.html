@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+  <div class="container">
+    <div>
+      <input type="number" id="inputTemp" placeholder="Degree">
+      <div class="select-wrapper">
+        <select name="degree" id="inputScale">
+          <option>...Type....</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="celsius">Celsius</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label for="#outputTemp">To Degree:</label>
+      <div class="select-wrapper">
+        <select id="outputScale">
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="celsius">Celsius</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" onclick="prTemp()">Convert</button>
+    <p id="outputTemp">Result Will Appear Here</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
